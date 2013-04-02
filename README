@@ -1,0 +1,5 @@
+1. Visitor Counter
+For this part, I made a text file called count.txt which contains a single number that keeps track of number of visitors on page. Then I wrote a python script called viewcount.cgi that opens the count.txt, reads for a number, prints that number, and rewrites the count.txt to increment up by 1. In my index.php, I calle the python script which prints out the number of visitors.
+
+2. Time of day counter.
+For this part, I utilized python's datetime and pickle dictionary. First I find the hour of the day and load the times.p pickle dictionary. If there is no dictionary initialized, I initialize it to empty dictionary, {}. Then I increment the value associated with the hour by 1 or set it equals to 1 if there is no value for it yet. I then dump the new dictionary into file times.p, and iterate over the dictionary to print out the hour (key) along with the value for that key.
